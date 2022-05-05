@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Trains;
+use App\Train;
 
 class ControllerTrains extends Controller
 {
     public function index() {
-        $item = Trains::where(date('d'), '!=', 'Orario_di_partenza');
+        $item = Train::where('Orario_di_partenza', 'like', '2022-05-05%')->get();
         return view('train', compact('item'));
     }
 }
