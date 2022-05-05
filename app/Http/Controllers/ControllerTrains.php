@@ -8,7 +8,7 @@ use App\Trains;
 class ControllerTrains extends Controller
 {
     public function index() {
-        $item = Trains::where('date_started', '!=', 'Orario_di_partenza');
+        $item = Trains::where(date('d'), '!=', 'Orario_di_partenza');
         return view('train', compact('item'));
     }
 }
