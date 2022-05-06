@@ -3,15 +3,17 @@ ul{
 }
 
 li{
+    font-size: 20px;
     display: inline-block;
     padding: 0 1.3rem;
 }
 span{
-    padding: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.3rem;
     padding-bottom: 1rem;
 }
 .train{
-    padding-bottom: 1rem;
+    padding-bottom: 1.3rem;
 }
 .last{
     padding-left: 6rem;

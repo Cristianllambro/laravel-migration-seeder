@@ -20,7 +20,7 @@
             <li>Numero carrozza</li>
         </ul>
 
-        @foreach ($item as $obj)
+        @foreach ($myTrain as $obj)
         <div class="train">
             <span>{{ $obj->Azienda }}</span>
             <span>{{ $obj->Stazione_di_partenza }}</span>
@@ -31,8 +31,7 @@
             <span class="last">{{ $obj->Numero_carrozza }}</span>
         </div>
         @endforeach
-
-        
+        <span>{{ $myTrain->links() }}</span>
     </div>
 </body>
 </html>
