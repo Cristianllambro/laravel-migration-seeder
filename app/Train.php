@@ -10,6 +10,8 @@ class Train extends Model
         'Azienda',
         'Stazione_di_partenza',
         'Stazione_di_arrivo',
+        'Giorno_di_partenza',
+        'Giorno_di_arrivo',
         'Orario_di_partenza',
         'Orario_di_arrivo',
         'Codice_treno',
