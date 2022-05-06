@@ -8,7 +8,7 @@ use App\Train;
 class ControllerTrains extends Controller
 {
     public function index() {
-        $item = Train::where('Orario_di_partenza', 'like', '2022-05-05%')->get(); // sono consapevole che e' un valore statico
+        $item = Train::where('Orario_di_partenza', 'like', date('Y-m-d', time().'%'))->get();
         return view('train', compact('item'));
     }
 }
